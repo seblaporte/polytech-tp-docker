@@ -26,7 +26,7 @@ __Exigences__ :
 
 - Le service doit être accessible sur le port TCP 8080 de la machine hôte
 - Les sources du site web ne doivent pas être embarquées dans le conteneur Docker
-- Image à utiliser : `alpine`
+- Image à utiliser : `ubuntu`
 
 ### Étape 1 : Déploiement avec Docker
 
@@ -42,6 +42,8 @@ Application à déployer :
 
 - Langage : Node.JS
 - Description : API Rest permettant d'obtenir des informations sur un utilisateur et son mot de passe de connexion. Documentation de l'API disponible dans les sources, dossier `doc`.
+
+Image à utiliser : Dans cette seconde partie, il est demandé d'utiliser l'image __Alpine__.
 
 ### Informations sur l'application
 
