@@ -12,6 +12,8 @@ ADD app/package.json /app
 
 WORKDIR /app
 
+RUN npm install nodemon -g
+
 RUN npm install
 
 ADD app /app
