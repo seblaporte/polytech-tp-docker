@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+
+  syges-interface:
+    build:
+      context: ./syges-interface
+      dockerfile: Dockerfile-DEV
+    environment:
+      - ENV=DEV
+    volumes:
+      - ./syges-interface/app:/app
+
+  syges-database:
+    ports:
+      - 3336:3306

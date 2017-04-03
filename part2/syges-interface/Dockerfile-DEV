@@ -1,0 +1,16 @@
+FROM alpine:3.2
+
+RUN \
+    apk --update add \
+    nodejs unrar bash git curl && \
+    rm -f /var/cache/apk/* && \
+    echo "Packages successfully installed"
+
+RUN mkdir -p /app
+
+RUN \
+	npm install nodemon -g
+
+WORKDIR /app
+
+CMD [ "npm", "start" ]
